@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: bisque;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid green;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid red;
+}
+
+.menu-items {
+    display: block;
+    content: "";
+    width: 50%;
+    float: left;
+    clear: both;
+}
+
+.menu-item {
+    flex: 50%;
+    width: 400px;
+    min-height: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid red;
+    display: flex;
+    gap: 5px;
+}
+
+.menu-image {
+    float: left;
+    clear: right;
+}
+
+.menu-info {
+    padding: 8px;
+}
+
+.menu-title {
+    display: inline-block;
+}
+
+.menu-price {
+    display: inline-block;
+    float: right;
+}
